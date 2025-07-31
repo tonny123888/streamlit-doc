@@ -1,10 +1,8 @@
 streamlit==1.47.1
-torch==2.7.1
+torch==2.7.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
 transformers==4.54.0
+sentencepiece==0.1.99  # 特殊兼容版本
+protobuf==3.20.0
 pandas==2.3.1
 numpy==1.26.4
 tqdm==4.67.1
-python-dotenv==1.0.1      # 强烈建议添加
-PyPDF2==3.0.1             # PDF处理必备
-sentencepiece==0.2.0
-protobuf==6.31.1
