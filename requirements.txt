@@ -6,5 +6,3 @@ numpy==1.26.4
 tqdm==4.67.1
 python-dotenv==1.0.1      # 强烈建议添加
 PyPDF2==3.0.1             # PDF处理必备
-sentencepiece==0.2.0
-protobuf==6.31.1
