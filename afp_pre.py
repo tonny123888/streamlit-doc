@@ -15,7 +15,7 @@ import datetime
 def load_feature_extractor():
     """Load ProtT5 feature extraction model"""
 # 第17行修正为：
-tokenizer = T5Tokenizer.from_pretrained("Rostlab/prot_t5_xl_uniref50", do_lower_case=False)
+    tokenizer = T5Tokenizer.from_pretrained("Rostlab/prot_t5_xl_uniref50", do_lower_case=False)
     model = T5EncoderModel.from_pretrained("Rostlab/prot_t5_xl_uniref50")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
